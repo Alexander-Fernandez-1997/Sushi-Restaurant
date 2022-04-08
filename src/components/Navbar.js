@@ -57,6 +57,14 @@ export const Navbar = () => {
             >
               About us
             </NavLink>
+            <NavLink
+              className={({ isActive }) =>
+                "nav-item nav-link " + (isActive ? "active" : "")
+              }
+              to="/login"
+            >
+              Admin
+            </NavLink>
           </div>
         </div>
       </nav>

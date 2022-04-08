@@ -113,3 +113,16 @@ code {
   width: 100%;
   object-fit: cover;
 }
+
+/* Login */
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.login-box {
+}
+.login-banner {
+  background-image: url("/src/images/login-banner.jpg");
+}

@@ -6,6 +6,7 @@ import { HomeScreen } from "./screen/HomeScreen";
 import { MenuScreen } from "./screen/MenuScreen";
 import { GalleryScreen } from "./screen/GalleryScreen";
 import { AboutScreen } from "./screen/AboutScreen";
+import { LoginScreen } from "./screen/LoginScreen";
 
 export const App = () => {
   return (
@@ -16,6 +17,7 @@ export const App = () => {
         <Route path="/menu" element={<MenuScreen />} />
         <Route path="/gallery" element={<GalleryScreen />} />
         <Route path="/about" element={<AboutScreen />} />
+        <Route path="/login" element={<LoginScreen />} />
         <Route path="/*" element={<HomeScreen />} />
       </Routes>
       <Footer />
