@@ -21,7 +21,7 @@ export const LoginScreen = () => {
               signInWithRedirect(auth, googleAuthProvider);
             }}
           >
-            Acceder atraves de Google
+            Sign in - Google
           </button>
         </div>
       </div>
