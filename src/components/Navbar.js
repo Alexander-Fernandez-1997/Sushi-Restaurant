@@ -1,48 +1,62 @@
 import React from "react";
 import "./../index.css";
+import { Link, NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-dark nav-bg fixed-top ">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+      <nav class="navbar navbar-expand-lg navbar-dark nav-bg fixed-top shadow ">
+        <div className="container-fluid">
+          <Link className="navbar-brand" to="/">
             Sushi Bar
-          </a>
+          </Link>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Menu
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Gallery
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">
-                  About us
-                </a>
-              </li>
-            </ul>
+          <div class="collapse navbar-collapse navbar-nav" id="navbarNav">
+            <NavLink
+              className={({ isActive }) =>
+                "nav-item nav-link " + (isActive ? "active" : "")
+              }
+              to="/"
+            >
+              Home
+            </NavLink>
+
+            <NavLink
+              className={({ isActive }) =>
+                "nav-item nav-link " + (isActive ? "active" : "")
+              }
+              to="/menu"
+            >
+              Menu
+            </NavLink>
+
+            <NavLink
+              className={({ isActive }) =>
+                "nav-item nav-link " + (isActive ? "active" : "")
+              }
+              to="/gallery"
+            >
+              Gallery
+            </NavLink>
+
+            <NavLink
+              className={({ isActive }) =>
+                "nav-item nav-link " + (isActive ? "active" : "")
+              }
+              to="/about"
+            >
+              About us
+            </NavLink>
           </div>
         </div>
       </nav>

@@ -17,6 +17,9 @@ code {
 .nav-bg {
   background-color: transparent;
 }
+.shadow {
+  text-shadow: 0px 0px 1px #000000;
+}
 
 /* Banner */
 .banner {
@@ -32,7 +35,7 @@ code {
   justify-content: flex-start;
   align-items: center;
 }
-.banner h1 {
+.banner-h1 {
   font-size: 4rem;
 }
 .banner-text {
@@ -84,4 +87,29 @@ code {
 .footer-icons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+/* Gallery */
+.mid-banner {
+  height: 70vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gallery-banner {
+  background-image: url("/src/images/gallery-banner.jpg");
+}
+.carousel-item {
+  height: 70vh;
+}
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.gallery img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
