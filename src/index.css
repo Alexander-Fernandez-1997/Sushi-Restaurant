@@ -7,6 +7,9 @@ body {
 .bg-gold {
   background-color: #c7914c;
 }
+.bg-darkness {
+  background-color: #262829;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -88,6 +91,10 @@ code {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
+.max-width {
+  max-width: 100%;
+  margin: 0;
+}
 
 /* Gallery */
 .mid-banner {
@@ -129,4 +136,31 @@ code {
 }
 .login-banner {
   background-image: url("/src/images/login-banner.jpg");
+}
+
+/* Menu */
+
+.menu-item {
+  height: 50vh;
+}
+.menu-img {
+  height: 50%;
+}
+.menu-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.menu-text {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.space {
+  height: 10vh;
+}
+.box {
+  padding-left: 5%;
+  padding-right: 5%;
 }

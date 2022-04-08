@@ -3,7 +3,7 @@ import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => {
   return (
-    <div className="footer text-light row">
+    <div className="footer text-light row max-width">
       <div className="col-12 col-md-4 footer-item">
         <div>
           <h4>Find us</h4>

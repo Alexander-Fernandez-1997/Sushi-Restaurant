@@ -5,7 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 export const Navbar = () => {
   return (
     <>
-      <nav class="navbar navbar-expand-lg navbar-dark nav-bg fixed-top shadow ">
+      <nav className="navbar navbar-expand-lg navbar-dark nav-bg fixed-top shadow ">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             Sushi Bar
@@ -21,7 +21,7 @@ export const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse navbar-nav" id="navbarNav">
+          <div className="collapse navbar-collapse navbar-nav" id="navbarNav">
             <NavLink
               className={({ isActive }) =>
                 "nav-item nav-link " + (isActive ? "active" : "")
