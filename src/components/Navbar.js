@@ -57,14 +57,14 @@ export const Navbar = () => {
             >
               About us
             </NavLink>
-            <NavLink
+            {/* <NavLink
               className={({ isActive }) =>
                 "nav-item nav-link " + (isActive ? "active" : "")
               }
               to="/login"
             >
               Admin
-            </NavLink>
+            </NavLink> */}
           </div>
         </div>
       </nav>
