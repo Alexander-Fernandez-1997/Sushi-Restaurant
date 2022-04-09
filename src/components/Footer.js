@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaUserTie, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -13,13 +13,19 @@ export const Footer = () => {
           </p>
 
           <div className="footer-icons">
-            <a href="">
-              <FaInstagram />
+            <a href="https://alexander-fernandez.netlify.app/" target="_blank">
+              <FaUserTie />
             </a>
-            <a href="">
+            <a
+              href="https://github.com/Alexander-Fernandez-1997"
+              target="_blank"
+            >
               <FaGithub />
             </a>
-            <a href="">
+            <a
+              href="https://www.linkedin.com/in/alexander-fern%C3%A1ndez-9455aa174/"
+              target="_blank"
+            >
               <FaLinkedin />
             </a>
           </div>

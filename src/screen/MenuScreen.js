@@ -23,15 +23,40 @@ export const MenuScreen = () => {
     fetchData();
   }, []);
 
+  const [query, setQuery] = useState("");
+
+  const getFilteredItems = (query, dishes) => {
+    if (query === "") {
+      return dishes;
+    }
+    return dishes.filter((dish) => dish.name.toLowerCase().includes(query));
+  };
+
+  const filteredDishes = getFilteredItems(query, dishesList);
+
   return (
     <>
       <div className="space bg-darkness footer"></div>
       <div className="box bg-darkness text-light footer">
         <h1>This is our menu</h1>
         <hr />
+
+        <div className="input-group input-group-sm pb-3 pt-3">
+          <span className="input-group-text" id="inputGroup-sizing-sm">
+            Food filter
+          </span>
+          <input
+            onChange={(e) => setQuery(e.target.value)}
+            type="text"
+            className="form-control"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </div>
+
         <div className="row pt-3 pb-3">
           {dishesList !== null
-            ? dishesList.map((dish) => (
+            ? filteredDishes.map((dish) => (
                 <div
                   key={dish.id}
                   className="col-12 col-md-4 col-lg-3
