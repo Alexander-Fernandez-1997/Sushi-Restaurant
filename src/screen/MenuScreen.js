@@ -63,7 +63,7 @@ export const MenuScreen = () => {
                 menu-item mt-2 mb-2"
                 >
                   <div className="menu-img">
-                    <img src={dish.img} alt={dish.name} />
+                    <img src={dish.img} alt={dish.name} className="img-fluid" />
                   </div>
                   <div className="menu-text">
                     <div>
