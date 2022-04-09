@@ -164,3 +164,23 @@ code {
   padding-left: 5%;
   padding-right: 5%;
 }
+
+/* About */
+.about-image {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 40vh;
+}
+.about-text {
+  height: 40vh;
+}
+.about-1 {
+  background-image: url("./images/about1-min.jpg");
+}
+.about-2 {
+  background-image: url("./images/about2-min.jpg");
+}
+.about-3 {
+  background-image: url("./images/about3-min.jpg");
+}
