@@ -60,19 +60,19 @@ export const MenuScreen = () => {
                 <div
                   key={dish.id}
                   className="col-12 col-md-4 col-lg-3
-                menu-item mt-1 mb-1"
+                menu-item mt-2 mb-2"
                 >
                   <div className="menu-img">
                     <img src={dish.img} alt={dish.name} />
                   </div>
                   <div className="menu-text">
                     <div>
-                      <h5>{dish.name}</h5>
+                      <h5 className="pt-3">{dish.name}</h5>
                       <hr />
                       <p>{dish.description}</p>
                     </div>
                     <div>
-                      <h4>${dish.price}</h4>
+                      <h5>${dish.price}</h5>
                     </div>
                   </div>
                 </div>
