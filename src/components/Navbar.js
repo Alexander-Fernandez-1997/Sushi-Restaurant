@@ -21,43 +21,44 @@ export const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse navbar-nav" id="navbarNav">
-            <NavLink
-              className={({ isActive }) =>
-                "nav-item nav-link " + (isActive ? "active" : "")
-              }
-              to="/"
-            >
-              Home
-            </NavLink>
+          <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div className=" navbar-nav">
+              <NavLink
+                className={({ isActive }) =>
+                  "nav-item nav-link " + (isActive ? "active" : "")
+                }
+                to="/"
+              >
+                Home
+              </NavLink>
 
-            <NavLink
-              className={({ isActive }) =>
-                "nav-item nav-link " + (isActive ? "active" : "")
-              }
-              to="/menu"
-            >
-              Menu
-            </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  "nav-item nav-link " + (isActive ? "active" : "")
+                }
+                to="/menu"
+              >
+                Menu
+              </NavLink>
 
-            <NavLink
-              className={({ isActive }) =>
-                "nav-item nav-link " + (isActive ? "active" : "")
-              }
-              to="/gallery"
-            >
-              Gallery
-            </NavLink>
+              <NavLink
+                className={({ isActive }) =>
+                  "nav-item nav-link " + (isActive ? "active" : "")
+                }
+                to="/gallery"
+              >
+                Gallery
+              </NavLink>
 
-            <NavLink
-              className={({ isActive }) =>
-                "nav-item nav-link " + (isActive ? "active" : "")
-              }
-              to="/about"
-            >
-              About us
-            </NavLink>
-            {/* <NavLink
+              <NavLink
+                className={({ isActive }) =>
+                  "nav-item nav-link " + (isActive ? "active" : "")
+                }
+                to="/about"
+              >
+                About us
+              </NavLink>
+              {/* <NavLink
               className={({ isActive }) =>
                 "nav-item nav-link " + (isActive ? "active" : "")
               }
@@ -65,6 +66,7 @@ export const Navbar = () => {
             >
               Admin
             </NavLink> */}
+            </div>
           </div>
         </div>
       </nav>
