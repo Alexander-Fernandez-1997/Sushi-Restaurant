@@ -151,6 +151,9 @@ code {
   /* width: 100%; */
   object-fit: cover;
 }
+.menu-img img:hover {
+  width: 100%;
+}
 .menu-text {
   height: 50%;
   display: flex;
