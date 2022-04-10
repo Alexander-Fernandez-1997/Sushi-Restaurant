@@ -11,7 +11,7 @@ export const GalleryScreen = () => {
         <div className="carousel-size">
           <div
             id="carouselExampleFade"
-            className="carousel slide carousel-fade"
+            className="carousel slide carousel-fade "
             data-bs-ride="carousel"
           >
             <div className="carousel-inner">
@@ -109,6 +109,7 @@ export const GalleryScreen = () => {
               <span
                 className="carousel-control-prev-icon"
                 aria-hidden="true"
+                id="ten-rem"
               ></span>
               <span className="visually-hidden">Previous</span>
             </button>
@@ -121,6 +122,7 @@ export const GalleryScreen = () => {
               <span
                 className="carousel-control-next-icon"
                 aria-hidden="true"
+                id="ten-rem"
               ></span>
               <span className="visually-hidden">Next</span>
             </button>
