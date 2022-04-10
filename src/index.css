@@ -23,7 +23,9 @@ code {
 .shadow {
   text-shadow: 1px 1px 1px #000000;
 }
-
+.navbar-expand-lg:hover {
+  background-color: black;
+}
 /* Banner */
 .banner {
   height: 90vh;
@@ -117,8 +119,9 @@ code {
 }
 .gallery img {
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 /* Login */
@@ -186,4 +189,8 @@ code {
 }
 .about-3 {
   background-image: url("./images/about3-min.jpg");
+}
+#ten-rem {
+  width: 10rem;
+  height: 10rem;
 }
